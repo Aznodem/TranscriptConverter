@@ -1,0 +1,78 @@
+
+  <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="projectOne.js"></script>
+    <title>Transcript Converter</title>
+  
+  </head>
+  <body>
+   <div>
+        <h2>Transcript analyzer</h2>
+        <input type="text" id="myInput" onkeyup="myFunction()" 
+        placeholder="Search for terms" title="Type in a word">
+    </div> 
+    <div>
+      <textarea id="text-box"></textarea>
+      <br>
+      <button onclick="convertToHtmlList()">Convert</button>
+    </div>
+    <div id="output"></div>
+    <div>
+      <textarea id="sentimentbox"></textarea>
+      <br>
+      <button onclick="sendData()">Analyze Sentiment</button>
+    </div>
+  </body>
+</html> 
+
+
+<!--<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="projectOne.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/text-encoding/0.7.0/text-encoding.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/textblob/0.15.3/textblob.min.js"></script>
+    <title>Text to HTML List Converter</title>
+  
+  </head>
+  <body>
+    <div>
+        <h2>My Phonebook</h2>
+        <input type="text" id="myInput" onkeyup="myFunction()" 
+        placeholder="Search for terms" title="Type in a word">
+    </div> 
+    <textarea id="text-box"></textarea>
+    <br>
+    <button onclick="convertToHtmlList()">Convert</button>
+    <div id="output"></div>
+
+    <script>
+      function analyzeSentiment() {
+        const output = document.getElementById("output").innerText;
+        const testimonial = new TextBlob(output);
+        const polarity = testimonial.sentiment.polarity;
+        const subjectivity = testimonial.sentiment.subjectivity;
+        console.log(testimonial);
+        if (polarity > 0) {
+          console.log("Overall This sentence has a Positive Sentiment");
+          console.log(testimonial.sentiment.polarity);
+        } else {
+          console.log("Overall This sentence has a Negative Sentiment");
+          console.log(testimonial.sentiment.polarity);
+        }
+
+        if (subjectivity > 0) {
+          console.log("Overall This sentence is Subjective");
+          console.log(testimonial.sentiment.subjectivity);
+        } else {
+          console.log("Overall This sentence is Objective");
+          console.log(testimonial.sentiment.subjectivity);
+        }
+      }
+    </script>
+    <button onclick="analyzeSentiment()">Analyze Sentiment</button>
+  </body>
+</html>-->
